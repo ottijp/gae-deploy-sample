@@ -1,0 +1,44 @@
+{
+  "name": "gae-deploy-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/app",
+    "build": "babel src --out-dir lib",
+    "deploy": "./gae-deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottijp/gae-deploy-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ottijp/gae-deploy-sample/issues"
+  },
+  "homepage": "https://github.com/ottijp/gae-deploy-sample#readme",
+  "engines": {
+    "node": "8.x.x"
+  },
+  "babel": {
+    "presets": [
+      "es2017",
+      ["env", {
+        "targets": {
+          "node": "8"
+        }
+      }]
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1"
+  },
+  "dependencies": {
+    "koa": "^2.5.1"
+  }
+}

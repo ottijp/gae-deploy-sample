@@ -1,0 +1,3 @@
+runtime: nodejs8
+env_variables:
+  HELLO_NAME: template-me
